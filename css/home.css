@@ -26,10 +26,15 @@ li {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    text-decoration: none;
 }
-
-ul {
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
     display: flex;
+    
 }
 
 .principal {
@@ -66,23 +71,14 @@ p {
 
 .button {
     background-color: #8B2D20;
-    /* Cor de fundo do botão */
     color: white;
-    /* Cor do texto */
     border: 5px solid #CAA261;
-    /* Borda dourada */
     border-radius: 60px;
-    /* Borda arredondada */
     padding: 10px 20px;
-    /* Espaçamento interno */
     font-size: 16px;
-    /* Tamanho da fonte */
     cursor: pointer;
-    /* Ícone de cursor */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
     transition: background-color 0.3s ease;
-    /* Transição suave de cor */
     width: 299px;
 
 
