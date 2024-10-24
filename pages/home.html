@@ -1,37 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/home.css">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/0cf6585b12.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="menu">
-        <img src="/img/losbigodes-removebg-preview.png">
-        <ul>
-            <li><a href="/index.html">Cardápio</a></li>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">Reservas</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre nós</a></li>
-        </ul>
-    </header>
-    <section class="principal">
-        <div class="text">
-            <h1>O sabor da calabresa</h1>
-            <p>A pizzaria mais querida do momento</p>
-        </div>
-        <a href="/index.html">
-        <div class="btn">
-                <div class="button">
-                    <p>Peça já!</p>
-                </div>
-        </div>
+    <header id="navbar">
+        <a href="../index.html">
+        <img src="../img/losbigodes-removebg-preview.png">
     </a>
-    </section>
+        <h1>Carrinho de Compras</h1>
+        <i id="verCarrinho" onclick="mostrarCarrinho()" class="fas fa-shopping-cart"></i>
+    </header>
+    
+    <div class="container">
+        <div id="produtos-container" class="produtos-container">
+            <div class="card">
+                <img src="../img/calabresa.webp" alt="Produto 1">
+                <div class="text">
+                <h3>Pizza de Calabresa</h3>
+                <p>R$30.00</p>
+            </div>
+            <div class="card-footer">
+                <button class="adicionarCarrinho" onclick="adicionar('Produto 1', 10)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            </div>
+            <div class="card">
+                <img src="../img/Outlook-Receita de.jpg" alt="Produto 2">
+                <div class="text">
+                <h3>Pizza de Frango 
+                    Catupiry</h3>
+                <p>Preço: R$ 20.00</p>
+                </div>
+                <div class="card-footer">
+                <button class="adicionarCarrinho" onclick="adicionar('Produto 2', 20)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            </div>
+            <div class="card">
+                <img src="../img/Outlook-Conheça es.jpg" alt="Produto 2">
+                <div class="text">
+                <h3>Pizza de Queijo</h3>
+                <p>R$ 20.00</p>
+                </div>
+                <div class="card-footer">
+                <button class="adicionarCarrinho" onclick="adicionar('Produto 2', 20)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            </div>
+            <div class="card">
+                <img src="../img/Outlook-13 Receita.jpg" alt="Produto 3">
+                <div class="text">
+                <h3>Pizza Doce 
+                    Chocolate com Morango</h3>
+                <p>R$ 30.00</p>
+                </div>
+                <div class="card-footer">
+                <button class="adicionarCarrinho" onclick="adicionar('Produto 3', 30)">
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+            </div>
+        </div>
+        <footer class="d-flex flex-wrap justify-content-between m-5 align-item-center py-3 my-4 border-top ">
+            <p class="col-md-4 mb-0 text-muted"> &copy; 2024 Loss Bigootes SESI-SENAI </p>
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
